@@ -1,9 +1,11 @@
 
 # PHP oEmbed consumer library
 
-Simple consumer library for [oEmbed](http://oembed.com/).
+Simple consumer library for [oEmbed](http://oembed.com/) with discovery support.
 
 ## Usage
+
+In this example the library automatically discovers the oEmbed enpoint for the `http://vimeo.com/31423544` resource, and asks for informations about the resource.
 
 ``` php
 <?php
@@ -33,7 +35,7 @@ $provider = new OEmber\Provider('http://vimeo.com/api/oembed.json', 'json');
 $response = $provider->request('http://vimeo.com/31423544');
 ```
 
-The library is also capable of dicovering the oEmbed enpoint from a resource URL (if the site supports it):
+The library is also capable of discovering the oEmbed enpoint from a resource URL (if the site supports it):
 
 ``` php
 <?php
