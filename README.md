@@ -1,5 +1,6 @@
-
 # PHP oEmbed consumer library
+
+[![Build Status](https://secure.travis-ci.org/arnaud-lb/alb-oembed.png)](http://travis-ci.org/arnaud-lb/alb-oembed)
 
 Simple consumer library for [oEmbed](http://oembed.com/) with discovery support.
 
