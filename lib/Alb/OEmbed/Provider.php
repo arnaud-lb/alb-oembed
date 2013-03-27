@@ -106,7 +106,11 @@ class Provider
 
     protected function fetchUrl($url)
     {
-        return file_get_contents($url);
+        $html = @file_get_contents($url);
+        if ( $html === FALSE ) {
+            throw new \Exception( 'Failed to open stream: HTTP request failed' );
+        }
+        return $html;
     }
 
     protected function setUrlParams($url, $params)
