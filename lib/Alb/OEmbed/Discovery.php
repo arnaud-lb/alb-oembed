@@ -105,7 +105,7 @@ class Discovery
     protected function fetchUrl($url)
     {
         $html = @file_get_contents($url);
-        if ( $html === FALSE ) {
+        if ( false === $html ) {
             throw new \Exception( 'Failed to open stream: HTTP request failed' );
         }
         return $html;
