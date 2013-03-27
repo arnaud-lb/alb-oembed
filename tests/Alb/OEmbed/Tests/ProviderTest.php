@@ -27,5 +27,12 @@ class ProviderTest extends \PHPUnit_Framework_TestCase
         $this->assertSame('video', $response->getType());
         $this->assertSame('http://i3.ytimg.com/vi/zTDGSjSBHn4/hqdefault.jpg', $response->getThumbnailUrl());
     }
+
+    public function testKo()
+    {
+        $provider = new Provider('', Provider::TYPE_JSON);
+        $this->setExpectedException( 'Exception' );
+        $provider->request('http://i3.ytimg.com/vi/zTDGSjSBHn4/hqdefault.jpg');
+    }
 }
 

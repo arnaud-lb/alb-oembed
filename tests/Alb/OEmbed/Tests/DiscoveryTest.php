@@ -49,5 +49,12 @@ class DiscoveryTest extends \PHPUnit_Framework_TestCase
         $this->assertSame('http://www.youtube.com/oembed?format=xml', $provider->getEndpoint());
         $this->assertSame(Provider::TYPE_XML, $provider->getType());
     }
+
+    public function testDiscoverKo()
+    {
+        $discovery = new Discovery;
+        $this->setExpectedException( 'Exception' );
+        $discovery->discover('');
+    }
 }
 
