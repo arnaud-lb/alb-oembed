@@ -30,7 +30,7 @@ echo $response->getHtml();
 use Alb\OEmbed;
 
 // instanciate a Provider from a known endpoint
-$provider = new OEmber\Provider('http://vimeo.com/api/oembed.json', 'json');
+$provider = new OEmbed\Provider('http://vimeo.com/api/oembed.json', 'json');
 
 // request information about a resource
 $response = $provider->request('http://vimeo.com/31423544');
