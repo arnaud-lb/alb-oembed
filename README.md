@@ -44,7 +44,7 @@ The library is also capable of discovering the oEmbed enpoint from a resource UR
 use Alb\OEmbed;
 
 $discovery = new OEmbed\Discovery;
-$provider = $disovery->discover('http://vimeo.com/31423544');
+$provider = $discovery->discover('http://vimeo.com/31423544');
 
 // or, using OEmbed\Simple:
 
