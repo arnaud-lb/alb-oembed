@@ -11,7 +11,7 @@
             "email": "arnaud.lb@gmail.com"
         }
     ],
-    "requires": {
+    "require": {
         "php": ">=5.3.0"
     },
     "autoload": {
