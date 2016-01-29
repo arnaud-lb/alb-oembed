@@ -67,7 +67,7 @@ class Discovery
         $types = array('application/json+oembed', 'text/xml+oembed');
 
         foreach($dom->getElementsByTagName('link') as $link) {
-            if (!preg_match('#\balternate\b#', $link->getAttribute('rel'))) {
+            if (!preg_match('#\balternat(e|ive)\b#', $link->getAttribute('rel'))) {
                 continue;
             }
             if (!in_array($link->getAttribute('type'), $types)) {
